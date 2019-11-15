@@ -48,8 +48,8 @@ class LinkedList:
         current = self.head 
         while current: 
             next = current.next_node
-            current.next_node = prev 
+            current.next_node = prev # change orientation of pointer
             prev = current 
             current = next
-        self.head = prev 
+        self.head = prev # move the head
 
