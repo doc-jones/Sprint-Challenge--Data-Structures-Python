@@ -17,14 +17,14 @@ f.close()
 #        if name_1 == name_2:
 #            duplicates.append(name_1)
 
-bst = BinarySearchTree(names_1[0])
+bst = BinarySearchTree(names_1[0]) 
 
-for name in names_1[1:]:
-    bst.insert(name)
+for name in names_1[1:]: # iterate through names_1 from begining to end
+    bst.insert(name)  # add to BST
 duplicates = []
 for name in names_2:
-    if bst.contains(name):
-        duplicates.append(name)
+    if bst.contains(name):  # compare name in names_2 with bst of names_1
+        duplicates.append(name) # add name found in both to duplicates[]
 
 
 end_time = time.time()
