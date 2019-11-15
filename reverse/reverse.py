@@ -53,5 +53,3 @@ class LinkedList:
             current = next
         self.head = prev 
 
-
-  #comment to commit
